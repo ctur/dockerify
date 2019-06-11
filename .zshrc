@@ -20,7 +20,6 @@ if ! zgen saved; then
     # bulk load
     zgen loadall <<EOPLUGINS
         zsh-users/zsh-history-substring-search
-        /path/to/local/plugin
 EOPLUGINS
     # ^ can't indent this EOPLUGINS
 
@@ -37,5 +36,3 @@ EOPLUGINS
 fi
 
 alias ll='ls -l --color=auto'
-
-export PATH="$(yarn global bin):$PATH"
