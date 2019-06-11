@@ -25,6 +25,7 @@ Dockerify uses a number of open source projects to work properly:
 - [Oh-My-Zsh] - Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration.
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
+- [zgen] - A lightweight plugin manager for Zsh inspired by Antigen. Keep your .zshrc clean and simple.
 
 [//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
 [node.js]: http://nodejs.org
@@ -32,3 +33,4 @@ Dockerify uses a number of open source projects to work properly:
 [zsh]: https://www.zsh.org
 [@tjholowaychuk]: http://twitter.com/tjholowaychuk
 [express]: http://expressjs.com
+[zgen]: https://github.com/tarjoilija/zgen
