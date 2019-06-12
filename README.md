@@ -17,7 +17,7 @@ $ docker save test_prod/latest > /home/username/test_prod.tar
 $ cat test_prod.tar | docker load
 ```
 
-### Tech
+# Tech
 
 Dockerify uses a number of open source projects to work properly:
 
@@ -26,6 +26,26 @@ Dockerify uses a number of open source projects to work properly:
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 - [zgen] - A lightweight plugin manager for Zsh inspired by Antigen. Keep your .zshrc clean and simple.
+
+# Useful Commands
+
+- ubuntu details
+
+```sh
+$ lsb_release -a
+```
+
+- machine details
+
+```sh
+$ lshw -a
+```
+
+- set env from bash
+
+```sh
+$ Enviroment=Term=xterm
+```
 
 [//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
 [node.js]: http://nodejs.org
