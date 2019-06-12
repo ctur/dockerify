@@ -5,10 +5,10 @@
 Dockerify is a WIP project for creating a development environment inside a container.
 
 ```sh
-$ docker build -t test/latest .
-$ docker run -it --name test test/latest zsh
-$ docker image rm -f test/latest
-$ docker start -i test (for stopped container)
+$ docker build -t test/latest . # build image from dockerfile
+$ docker run -it --name test test/latest zsh # create container from image
+$ docker start -i test (for stopped container) # reconnect to container
+$ docker image rm -f test/latest # remove image
 ```
 
 ```sh
