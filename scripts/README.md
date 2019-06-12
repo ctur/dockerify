@@ -1,0 +1,1 @@
+Run zsh from .bashrc
