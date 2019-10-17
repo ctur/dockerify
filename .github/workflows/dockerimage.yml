@@ -1,0 +1,23 @@
+name: Docker Image CI
+
+on: 
+  push:
+    branches: 
+      - next
+
+jobs:
+
+  build:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v1
+    - name: Login to Github package registry
+      run: docker login docker.pkg.github.com -u ctur -p a38e40c7455a96c39de6feeef426dfb26add5e1f
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag dockerify/latest
+    - name: Change tag name for Github package registry
+      run: docker tag dockerify/latest docker.pkg.github.com/ctur/dockerify/dockerify:latest
+    - name: Push the tagged image to package registry
+      run: docker push docker.pkg.github.com/ctur/dockerify/dockerify:latest 
