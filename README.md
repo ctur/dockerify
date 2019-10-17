@@ -3,6 +3,7 @@
 ![Docker Development](docker-dev.jpg)
 
 Dockerify is a WIP project for creating a development environment inside a container.
+Create container and connect to it using VsCode Remote your development environment is ready.
 
 ```sh
 $ docker build -t test/latest . # build image from dockerfile
